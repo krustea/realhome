@@ -1,0 +1,241 @@
+/*
+Theme Name: realhome
+Description: Theme Realhome  Author: Tregret Thibault
+Author URI: https://www.test.fr
+Template: realhome
+Version: 0.1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    font-family: playfair;
+
+}
+
+header nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.menu-container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-header {
+    margin-left: 100px;
+    margin-top: 17.5px;
+}
+
+.imghome {
+    min-height: 100vh;
+}
+
+header nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+header nav ul li {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+}
+
+.real-menu li:hover {
+    background-color: #f2f2f2;
+}
+
+.real-menu a {
+    text-decoration: none;
+    font-family: playfair;
+}
+
+.real-menu-second {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.real-menu-second a {
+    padding-top: 15px;
+    text-align: center;
+    border: 1px grey solid;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    color: grey;
+}
+
+footer{
+    background-color: #303030;
+    min-height: 300px;
+}
+
+.arttitle {
+    position: relative;
+    z-index: -9999;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.font-ralway-title {
+    font-family: raleway;
+    font-size: 2.8em;
+
+}
+
+.htitle {
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    z-index: 1;
+}
+
+.subhead {
+    display: flex;
+    height: 200px;
+    margin-top: 100px;
+    font-family: raleway;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.front-page-field {
+    display: flex;
+    min-width: 30%;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.front-page-content {
+    text-align: left;
+    margin-left: 20px;
+
+}
+
+.detail-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    min-height: 200px;
+    background-color: whitesmoke;
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+.detail i{
+    margin-bottom: 10px;
+}
+
+.detail h3{
+    margin-bottom: 10px;
+}
+.accueil-propriete-container{
+    min-height: 300px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.accueil-propriete-titre{
+text-align: center;
+    font-size: 2.5em;
+}
+
+.accueil-propriete-description{
+text-align: center;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+padding: 100px 30px;
+}
+
+.propcard{
+    min-height: 300px;
+    min-width: 30%;
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid lightgrey;
+    margin: 10px;
+}
+
+.propcard a {
+    text-decoration: none;
+    color: grey;
+
+}
+.propcard h4{
+    font-size: 1.5em;
+    color: black;
+}
+.prix{
+    color: red;
+}
+.imgcard{
+    background-size: cover;
+    width: 100%;
+    height: 220px;
+}
+
+.infocard{
+    display: flex;
+    justify-content: space-around;
+    border-top: solid 1px lightgrey;
+}
+
+.propos-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   min-height: 300px;
+
+}
+
+.propos-content{
+    text-align: justify;
+
+}
+
+@font-face {
+    font-family: raleway;
+    src: url("fonts/Raleway/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: playfair;
+    src: url("fonts/Playfair_Display/PlayfairDisplay-Regular.ttf");
+}
