@@ -16,7 +16,7 @@
     <div>
         <img class="logo-header" src="<?php echo bloginfo('template_url');?>/images/logo-1.png"" alt="logo">
     </div>
-    <div class="real-menu"><?php  wp_nav_menu(array( 'theme_location' => 'menu-principal', 'container' => 'nav')); ?></div>
+    <div class="real-menu hvr-underline-from-center"><?php  wp_nav_menu(array( 'theme_location' => 'menu-principal', 'container' => 'nav')); ?></div>
     <div class="real-menu-second">	<?php  wp_nav_menu(array( 'theme_location' => 'menu-secondaire', 'container' => 'nav')); ?>
     </div>
 </div>
