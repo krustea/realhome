@@ -8,7 +8,7 @@
 	<?php while (have_posts()) : the_post(); ?>
 <h1 class="proptitle"><?php the_title() ?></h1>
         <div class="ville-link hvr-underline-from-center">
-            <a href="<?php the_permalink() ?>">Tous</a>
+            <a href="<?php echo site_url()?>/nos-proprietes/">Tous</a>
 
 
 			<?php $villes = get_terms('ville', array(

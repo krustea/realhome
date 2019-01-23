@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <div class="ville-link">
-        <a href="<?php the_permalink() ?>">Tous</a>
+        <a href="<?php echo site_url()?>/nos-proprietes/">Tous</a>
 
 
 		<?php $villes = get_terms('ville', array(

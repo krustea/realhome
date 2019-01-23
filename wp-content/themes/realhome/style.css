@@ -24,6 +24,13 @@ header nav div {
     width: 100%;
 
 }
+header{
+    -moz-box-shadow: 0px 10px 10px -3px #656565;
+    -webkit-box-shadow: 0px 10px 10px -3px #656565;
+    -o-box-shadow: 0px 10px 10px -3px #656565;
+    box-shadow: 0px 10px 10px -3px #656565;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=180, Strength=10);
+}
 
 .menu-container {
     height: 80px;
@@ -282,6 +289,52 @@ height: 30%;
 
 
 }
+.more-button {
+    padding:6px 0 6px 0;
+    font:Bold 13px Arial;
+    background:#d34836;
+    color:#fff;
+    width:90px;
+    border-radius:2px;
+    border:none;
+}
+
+.more-button a {
+    text-decoration: none;
+}
+.home-main-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.containarticle{
+width: 550px;
+}
+
+.article-preview{
+
+
+}
+.single-article{
+    width: 550px;
+}
+
+.single-article h1{
+    font-size: 3em;
+}
+.single-article p{
+    text-align: justify;
+    margin: 15px 0px;
+    font-family: raleway;
+}
+
+.article-img{
+    width: 550px;
+    height: auto;
+}
+
+
 
 .hvr-underline-from-center a  {
     display: inline-block;
