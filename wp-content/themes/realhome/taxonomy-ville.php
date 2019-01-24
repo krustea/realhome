@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-    <div class="ville-link">
+    <div class="ville-link hvr-underline-from-center">
         <a href="<?php echo site_url()?>/nos-proprietes/">Tous</a>
 
 
@@ -15,8 +15,8 @@
 		<?php } ?>
 
     </div>
-
-<?php if (have_posts()) : ?>
+<div class="cardcontainer">
+    <?php if (have_posts()) : ?>
 	<?php while (have_posts()) : the_post(); ?>
 
         <div class="propcard">
@@ -54,5 +54,5 @@
 
 	<?php endwhile;?>
 <?php endif;?>
-
+</div>
 <?php get_footer(); ?>

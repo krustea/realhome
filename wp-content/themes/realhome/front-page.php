@@ -44,6 +44,7 @@
     <?php endwhile; ?>
 <?php endif; ?>
 
+
 <?php
 $args = array(
     'post_type' => 'proprietes',
@@ -88,9 +89,55 @@ $args = array(
         </a>
     </div>
     <?php endwhile; ?>
-    <?php ?>
+
+
 <?php endif; ?>
+
+
 </div>
+<?php wp_reset_postdata() ?>
+<div class="boutton-container">
+    <a class="boutton-propriete" href="<?php echo site_url()?>/nos-proprietes/">Voir toutes</a>
+</div>
+
+<div class="agent-container-accueil">
+    <div>
+	    <?php
+
+                    $image = get_field('image-agent');?>
+        <img class="image-agent-accueil" src="<?php echo $image['url']; ?>" />
+
+    </div>
+    <div class="container-description">
+<div class="titre-agent-accueil"><?php the_field('titre-agent') ?></div>
+<h4><?php the_field('nom-agent') ?></h4>
+<div class="description-agent-accueil"><?php the_field('description-agent') ?></div>
+    </div>
+</div>
+<div class="partner-container">
+
+	<?php if (have_rows('partner')): ?>
+        <div>
+            <p>Our <strong>Partner</strong></p>
+        </div>
+		<?php while (have_rows('partner')) : the_row(); ?>
+
+
+				<?php
+				$image = get_sub_field('partner-image');?>
+                <img src="<?php echo $image['url']; ?>" />
+
+		<?php endwhile; ?>
+
+	<?php else : ?>
+
+        // no rows found
+
+	<?php endif; ?>
+</div>
+
+
+
 <?php wp_reset_postdata() ?>
 
 

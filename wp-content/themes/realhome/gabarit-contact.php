@@ -1,14 +1,19 @@
 <?php /*Template Name: Gabarit contact */ ?>
 <?php get_header(); ?>
 
+
 <?php if ( have_posts() ): ?>
 
 	<?php while ( have_posts() ): the_post(); ?>
-		<h1 class="contact-title"><?php the_title(); ?></h1>
-		<?php
-		$image = get_field('image-contact');?>
-        <img src="<?php echo $image ?>" alt="map">
-		<?php the_content(); ?>
+        <h1 class="contact-title"><?php the_title(); ?></h1>
+
+        <div id="map"></div>
+        <div class="contact-container">
+
+           <div class="info-contact"><?php the_field('info-contact') ?></div>
+            <div class="form-contact"> <?php echo do_shortcode('[contact-form-7 id="102" title="Contact form 1"]') ?></div>
+
+        </div>
 	<?php endwhile; ?>
 <?php endif ?>
 

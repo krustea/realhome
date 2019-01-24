@@ -5,7 +5,7 @@
 
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
-        <h1><?php the_title() ?></h1>
+        <h1 class="propos-title"><?php the_title() ?></h1>
 <div class="propos-container">
     <div class="imgproposdiv"><img class="imgpropos" src="<?php the_post_thumbnail_url('medium') ?>" alt="<?php the_title() ?>"></div>
     <div class="propos-content">

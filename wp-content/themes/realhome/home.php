@@ -14,10 +14,10 @@
             <?php while (have_posts()) : the_post(); ?>
                 <?php if (get_the_post_thumbnail_url()): ?>
                         <div class="article-preview" >
-                            <img src='<?php the_post_thumbnail_url( 'thumbnail' ) ?>' alt="image a la une">
                             <h3><?php the_title() ?></h3>
-                            <p> &nbsp;<?php the_time( 'd F Y g:i' ) ?></p>
-                            <?php the_excerpt() ?>
+                            <img class="article-thumbnail" src='<?php the_post_thumbnail_url( 'full' ) ?>' alt="image a la une">
+
+                            <div class="article-expert"></div><?php the_excerpt() ?>
                             <a class="more-button" href="<?php the_permalink() ?>">Lire la suite</a>
                         </div>
                 <?php endif; ?>

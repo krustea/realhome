@@ -6,6 +6,8 @@ function insert_css() {
     wp_enqueue_style('style-name', get_stylesheet_uri());
     wp_register_script('jquery','https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js');
     wp_enqueue_script('jquery');
+    wp_register_style('fonts','https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+    wp_enqueue_style('fonts');
 }
 
 //* Enqueue Font Awesome
@@ -14,8 +16,10 @@ function realhome_enqueue_scripts() {
 
     wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.3/css/all.css' );
 }
-add_action("wp_footer", "mfp_Add_Text");
-function mfp_Add_Text() {   echo "<p>Made by Krustea</p>"; }
+
+
+//add_action("wp_footer", "mfp_Add_Text");
+//function mfp_Add_Text() {   echo "<p>Made by Krustea</p>"; }
 
 add_theme_support('menus'); register_nav_menus(array('menu-principal' => 'Navigation principale','menu-secondaire' => 'Navigation secondaire' ));
 
